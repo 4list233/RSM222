@@ -1,4 +1,4 @@
-# Class 1: Chapter 1 & 2 - Teaching Notes
+# Class 1: Chapters 1 & 2 - Teaching Notes
 ## Introduction to Managerial Accounting & Cost Classification
 
 ---
@@ -541,28 +541,6 @@ Not all costs are relevant for every decision. Including irrelevant costs leads 
 - **Class 6 (Variable Costing):** Heavily relies on variable vs. fixed classification
 - **Class 8 (Budgeting):** Uses cost behavior to predict costs at different activity levels
 - **All decision-making topics:** Use relevant cost classification
-
----
-
-## CHECKPOINT QUESTIONS
-
-Before moving on, can you:
-
-1. Classify a cost (e.g., "factory rent") in all four ways?
-2. Explain why product costs go on the balance sheet first?
-3. Calculate total and per-unit costs for variable and fixed costs at different activity levels?
-4. Identify relevant vs. irrelevant costs in a decision scenario?
-5. Explain the difference between direct/indirect and variable/fixed?
-
----
-
-## READY FOR NEXT STEPS?
-
-After reviewing this, let me know:
-- ✅ "I understand, let's move to Class 2"
-- ❓ "I need clarification on [specific concept]"
-- 📝 "Give me practice questions on [topic]"
-- 🔄 "Explain [concept] differently"
 
 ---
 
