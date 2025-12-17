@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RSM222 Exam Aid Sheet</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 0.25in;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 7.5pt;
+            line-height: 1.05;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            font-weight: bold;
+            font-size: 9pt;
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 1px;
+            margin-bottom: 2px;
+        }
+        .section {
+            margin-bottom: 3px;
+            page-break-inside: avoid;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 8pt;
+            background-color: #e0e0e0;
+            padding: 1px 2px;
+            margin-bottom: 1px;
+        }
+        .subsection {
+            margin-left: 5px;
+            margin-bottom: 2px;
+        }
+        .formula {
+            font-family: 'Courier New', monospace;
+            background-color: #f5f5f5;
+            padding: 0.5px 2px;
+            margin: 0.5px 0;
+            font-size: 7pt;
+        }
+        .two-col {
+            display: flex;
+            gap: 6px;
+        }
+        .col {
+            flex: 1;
+        }
+        .highlight {
+            background-color: #fffacd;
+            padding: 1px 2px;
+        }
+        .compact {
+            margin: 0.5px 0;
+            font-size: 7pt;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 6.5pt;
+            margin: 1px 0;
+        }
+        td {
+            padding: 1px 3px;
+            border: 1px solid #ccc;
+        }
+        .bold { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">RSM222 EXAM AID SHEET - POST-MIDTERM FOCUS</div>
+
+    <div class="two-col">
+        <div class="col">
+            <!-- VARIABLE vs ABSORPTION COSTING -->
+            <div class="section">
+                <div class="section-title highlight">VARIABLE vs ABSORPTION COSTING (Ch 8) ⭐</div>
+                <div class="subsection">
+                    <div class="bold">Product Costs:</div>
+                    <div class="compact">Absorption: DM + DL + Var MOH + <span class="highlight">Fixed MOH</span></div>
+                    <div class="compact">Variable: DM + DL + Var MOH (<span class="highlight">Fixed MOH = Period</span>)</div>
+                    <div class="bold compact">Unit Cost:</div>
+                    <div class="formula">Absorption = Var Cost + (Fixed MOH ÷ Units Produced)</div>
+                    <div class="formula">Variable = Var Cost Only</div>
+                    <div class="bold compact">Income Statement:</div>
+                    <div class="compact">Absorption: Sales - COGS = Gross Margin - S&A = NOI</div>
+                    <div class="compact">Variable: Sales - Var COGS - Var S&A = CM - Fixed = NOI</div>
+                    <div class="bold compact">Income Difference:</div>
+                    <div class="formula">Diff = Change in Inv × Fixed MOH per Unit</div>
+                    <table style="font-size: 6.5pt;">
+                        <tr><td>Production = Sales</td><td>Same Income</td></tr>
+                        <tr><td>Production > Sales (Inv↑)</td><td>Absorption > Variable</td></tr>
+                        <tr><td>Production < Sales (Inv↓)</td><td>Variable > Absorption</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- BUDGETING -->
+            <div class="section">
+                <div class="section-title">BUDGETING (Ch 9)</div>
+                <div class="subsection">
+                    <div class="formula">Production = Sales + Ending Inv - Beginning Inv</div>
+                    <div class="formula">Materials Purchases = Production Needs + Ending Mat - Beginning Mat</div>
+                    <div class="formula">Materials Needed = Units to Produce × Mat per Unit</div>
+                    <div class="formula">Labor Cost = Units to Produce × Hours/Unit × Rate/Hour</div>
+                    <div class="formula">Cash = Beginning + Receipts - Disbursements</div>
+                    <div class="compact">Flow: Sales → Production → Materials/Labor/OH → Cash → Statements</div>
+                </div>
+            </div>
+
+            <!-- VARIANCES -->
+            <div class="section">
+                <div class="section-title">VARIANCES (Ch 10)</div>
+                <div class="subsection">
+                    <div class="bold">Materials:</div>
+                    <div class="formula">Price Var = AQ × (AP - SP)</div>
+                    <div class="formula">Quantity Var = SP × (AQ - SQ)</div>
+                    <div class="formula">SQ = Units PRODUCED × Std per Unit</div>
+                    <div class="bold">Labor:</div>
+                    <div class="formula">Rate Var = AH × (AR - SR)</div>
+                    <div class="formula">Efficiency Var = SR × (AH - SH)</div>
+                    <div class="bold">Variable OH:</div>
+                    <div class="formula">Spending Var = Actual - (AH × VOHR)</div>
+                    <div class="formula">Efficiency Var = VOHR × (AH - SH)</div>
+                    <div class="bold">Fixed OH:</div>
+                    <div class="formula">Budget Var = Actual - Budgeted</div>
+                    <div class="formula">Volume Var = Budgeted - Applied</div>
+                    <div class="compact">F = Actual < Std (cost less), U = Actual > Std (cost more)</div>
+                </div>
+            </div>
+
+            <!-- DECISION MAKING -->
+            <div class="section">
+                <div class="section-title">DECISION MAKING (Ch 12)</div>
+                <div class="subsection">
+                    <div class="bold">Relevant = Future + Different + Avoidable</div>
+                    <div class="bold">Sunk = Always Irrelevant</div>
+                    <div class="bold">Make-or-Buy:</div>
+                    <div class="formula">Compare: Make (Var + Avoidable Fixed) vs Buy (Price)</div>
+                    <div class="bold">Special Order:</div>
+                    <div class="formula">Accept if: Price > Variable Costs (if capacity available)</div>
+                    <div class="bold">Product Mix:</div>
+                    <div class="formula">Rank by: CM per Constrained Resource</div>
+                    <div class="formula">CM per Hour = CM per Unit ÷ Hours per Unit</div>
+                    <div class="bold">Keep or Drop:</div>
+                    <div class="formula">Compare: Segment Margin vs Avoidable Costs Saved</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <!-- ROI & RESIDUAL INCOME -->
+            <div class="section">
+                <div class="section-title">ROI & RESIDUAL INCOME (Ch 13)</div>
+                <div class="subsection">
+                    <div class="formula">ROI = Net Operating Income ÷ Avg Operating Assets</div>
+                    <div class="formula">ROI = Margin × Turnover</div>
+                    <div class="formula">Margin = NOI ÷ Sales</div>
+                    <div class="formula">Turnover = Sales ÷ Avg Assets</div>
+                    <div class="formula">RI = NOI - (Assets × Required ROI)</div>
+                    <div class="compact">ROI: % return, may discourage investments</div>
+                    <div class="compact">RI: $ above required, encourages all profitable investments</div>
+                    <div class="bold">Segment Margin:</div>
+                    <div class="formula">Revenue - Variable Costs - Traceable Fixed</div>
+                </div>
+            </div>
+
+            <!-- BALANCED SCORECARD -->
+            <div class="section">
+                <div class="section-title">BALANCED SCORECARD (Ch 11)</div>
+                <div class="subsection">
+                    <div class="bold">Four Perspectives:</div>
+                    <div class="compact">1. Financial: ROI, Profit, Revenue Growth</div>
+                    <div class="compact">2. Customer: Satisfaction, Market Share, Retention</div>
+                    <div class="compact">3. Internal Processes: Quality, Cycle Time, Efficiency</div>
+                    <div class="compact">4. Learning & Growth: Training, Employee Satisfaction</div>
+                    <div class="bold">Chain:</div>
+                    <div class="formula">Learning → Processes → Customer → Financial</div>
+                    <div class="compact">Financial = Lagging, Non-financial = Leading</div>
+                </div>
+            </div>
+
+            <!-- CVP ANALYSIS -->
+            <div class="section">
+                <div class="section-title">CVP ANALYSIS (Ch 3)</div>
+                <div class="subsection">
+                    <div class="formula">CM per Unit = Price - Variable Cost</div>
+                    <div class="formula">CM Ratio = CM ÷ Sales</div>
+                    <div class="formula">Break-Even Units = Fixed Costs ÷ CM per Unit</div>
+                    <div class="formula">Break-Even $ = Fixed Costs ÷ CM Ratio</div>
+                    <div class="formula">Target Profit Units = (Fixed + Target) ÷ CM per Unit</div>
+                    <div class="formula">Margin of Safety = Actual - Break-Even</div>
+                    <div class="formula">Operating Leverage = CM ÷ NOI</div>
+                    <div class="formula">% Change Profit = Leverage × % Change Sales</div>
+                </div>
+            </div>
+
+            <!-- COST CLASSIFICATION -->
+            <div class="section">
+                <div class="section-title">COST CLASSIFICATION (Ch 1-2)</div>
+                <div class="subsection">
+                    <table>
+                        <tr><td class="bold">Function:</td><td>Product (DM+DL+OH) vs Period (S&A)</td></tr>
+                        <tr><td class="bold">Behavior:</td><td>Variable (total changes) vs Fixed (total constant)</td></tr>
+                        <tr><td class="bold">Traceability:</td><td>Direct (traceable) vs Indirect (allocated)</td></tr>
+                        <tr><td class="bold">Relevance:</td><td>Relevant (differs) vs Irrelevant (same/sunk)</td></tr>
+                    </table>
+                    <div class="compact">Product Costs: Inventory → COGS (when sold)</div>
+                    <div class="compact">Period Costs: Expense immediately</div>
+                </div>
+            </div>
+
+            <!-- COSTING SYSTEMS -->
+            <div class="section">
+                <div class="section-title">COSTING SYSTEMS</div>
+                <div class="subsection">
+                    <div class="bold">Job Order (Ch 4-5):</div>
+                    <div class="formula">POHR = Est Overhead ÷ Est Base</div>
+                    <div class="formula">Applied = POHR × Actual Base</div>
+                    <div class="formula">Job Cost = DM + DL + Applied OH</div>
+                    <div class="formula">Variance = Actual - Applied</div>
+                    <div class="bold">Process (Ch 6):</div>
+                    <div class="formula">EU = Physical Units × % Complete</div>
+                    <div class="formula">Cost per EU = Total Cost ÷ EU</div>
+                    <div class="formula">Materials EU: Check when added (beginning/end/evenly)</div>
+                    <div class="bold">ABC (Ch 7):</div>
+                    <div class="formula">Activity Rate = Cost Pool ÷ Total Driver</div>
+                    <div class="formula">Product Cost = Σ(Rate × Product Usage)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 2px; font-size: 6.5pt; border-top: 1px solid #ccc; padding-top: 1px;">
+        <div class="bold">QUICK REFERENCE:</div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 5px; font-size: 6pt;">
+            <div>• Variable: Total↑ with activity, Per unit constant</div>
+            <div>• Fixed: Total constant, Per unit↓ with activity</div>
+            <div>• Direct/Indirect ≠ Variable/Fixed (independent!)</div>
+            <div>• Relevant: Will it change? Yes = Relevant</div>
+            <div>• Sunk: Can't change = Always ignore</div>
+            <div>• Product Costs: Inventory → COGS (when sold)</div>
+            <div>• Period Costs: Expense immediately</div>
+            <div>• F Variance: Actual < Std (cost less)</div>
+            <div>• U Variance: Actual > Std (cost more)</div>
+        </div>
+        <div style="margin-top: 2px; font-size: 6pt; border-top: 1px solid #ddd; padding-top: 1px;">
+            <span class="bold">Key Formulas:</span>
+            <span style="margin-left: 5px;">CM = Price - VC | BE = FC ÷ CM | Target = (FC + Profit) ÷ CM | ROI = NOI ÷ Assets = Margin × Turnover | RI = NOI - (Assets × Req ROI)</span>
+        </div>
+    </div>
+</body>
+</html>
+
