@@ -71,6 +71,26 @@
             border: 1px solid #ccc;
         }
         .bold { font-weight: bold; }
+        .income-stmt {
+            font-size: 6.5pt;
+            background-color: #f9f9f9;
+            padding: 2px;
+            margin: 1px 0;
+            border: 1px solid #ddd;
+        }
+        .income-stmt .line {
+            padding: 0.5px 2px;
+        }
+        .income-stmt .indent {
+            padding-left: 12px;
+        }
+        .income-stmt .double-indent {
+            padding-left: 20px;
+        }
+        .income-stmt .underline {
+            border-bottom: 1px solid #333;
+            padding-bottom: 1px;
+        }
     </style>
 </head>
 <body>
@@ -85,27 +105,39 @@
                     <div class="bold">Product Costs:</div>
                     <div class="compact">Absorption: DM + DL + Var MOH + <span class="highlight">Fixed MOH</span></div>
                     <div class="compact">Variable: DM + DL + Var MOH (<span class="highlight">Fixed MOH = Period</span>)</div>
-                    <div class="bold compact">Unit Cost:</div>
-                    <div class="formula">Absorption = Var Cost + (Fixed MOH ÷ Units Produced)</div>
-                    <div class="formula">Variable = Var Cost Only</div>
-                    <div class="bold compact">Income Statement Format:</div>
-                    <div class="compact" style="font-size: 6.5pt;"><span class="bold">Absorption:</span></div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">Sales</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">- COGS (Beg Inv + COGM - End Inv)</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">= Gross Margin</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">- S&A Expenses</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">= Operating Income</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-top: 2px;"><span class="bold">Variable:</span></div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">Sales</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">- Var COGS (Beg Inv + Var Mfg - End Inv)</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">- Var S&A</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">= Contribution Margin</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">- Fixed MOH</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">- Fixed S&A</div>
-                    <div class="compact" style="font-size: 6.5pt; margin-left: 5px;">= Operating Income</div>
-                    <div class="bold compact">Ending Inventory:</div>
-                    <div class="compact" style="font-size: 6.5pt;">Absorption: Units × (Var Cost + Fixed MOH/Unit)</div>
-                    <div class="compact" style="font-size: 6.5pt;">Variable: Units × Var Cost Only</div>
+                    <div class="bold compact">Income Statement Formats:</div>
+                    <div class="income-stmt">
+                        <div class="bold line">VARIABLE COSTING:</div>
+                        <div class="line">Sales</div>
+                        <div class="bold line">Variable Expenses:</div>
+                        <div class="line indent">Variable Cost of Goods Sold:</div>
+                        <div class="line double-indent">Beginning inventory</div>
+                        <div class="line double-indent">+ Variable manufacturing costs</div>
+                        <div class="line double-indent underline">= Goods available for sale</div>
+                        <div class="line double-indent">- Ending inventory</div>
+                        <div class="line double-indent underline">= Variable cost of goods sold</div>
+                        <div class="line indent">Variable selling and administrative expense</div>
+                        <div class="line bold underline">Total variable expenses</div>
+                        <div class="line bold underline">Contribution margin</div>
+                        <div class="bold line">Fixed Expenses:</div>
+                        <div class="line indent">Fixed manufacturing overhead</div>
+                        <div class="line indent">Fixed selling and administrative</div>
+                        <div class="line bold underline">Total fixed expenses</div>
+                        <div class="line bold highlight">Operating income</div>
+                    </div>
+                    <div class="income-stmt">
+                        <div class="bold line">ABSORPTION COSTING:</div>
+                        <div class="line">Sales</div>
+                        <div class="line">Cost of goods sold:</div>
+                        <div class="line indent">Beginning inventory</div>
+                        <div class="line indent">+ Cost of goods manufactured</div>
+                        <div class="line indent underline">= Goods available for sale</div>
+                        <div class="line indent">- Ending inventory</div>
+                        <div class="line indent underline">= Cost of goods sold</div>
+                        <div class="line bold underline">Gross margin</div>
+                        <div class="line">- Selling and administrative expenses</div>
+                        <div class="line bold highlight">Operating income</div>
+                    </div>
                     <div class="bold compact">Income Difference:</div>
                     <div class="formula">Diff = Change in Inv × Fixed MOH per Unit</div>
                     <table style="font-size: 6.5pt;">
